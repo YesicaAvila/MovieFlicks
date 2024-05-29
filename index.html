@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="icon"
+        type="imagen/png"
+        sizes="16x16"
+        href="./assets/img/watching-a-movie_4221419.png"
+        />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>MovieFlicks</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navbar-list">
+                <img 
+                    src="./assets/img/watching-a-movie_4221419.png" 
+                    alt="logo"
+                    class="logo1"
+                />
+                <li><a class="navbar-link" href="#">
+                    <img 
+                        src="./assets/img/popcorn_659363.png" 
+                        alt="home" 
+                        class="home" 
+                    />
+                    INICIO
+                </a></li>
+                <li><a class="navbar-link" href="#">
+                    <img 
+                        src="./assets/img/rating_3851524.png"
+                        alt="favorito"
+                        class="fav"
+                    />
+                    FAVORITOS
+                </a></li>
+                <li><a class="navbar-link" href="./assets/series/serie.html">
+                    <img 
+                    src="./assets/img/movie-night_2729076.png" 
+                    alt="series"
+                    class="series"
+                    />
+                    SERIES
+                </a></li>
+                <li><a class="navbar-link" href="#">
+                    <img 
+                    src="./assets/img/employees_251124.png" 
+                    alt="nosotros"
+                    class="nosotros"
+                    />
+                    NOSOTROS
+                </a></li>
+                <li><a class="navbar-link" href="#">
+                    <img 
+                    src="./assets/img/file_6996531.png" 
+                    alt="informacion"
+                    class="info"
+                    />
+                    INFORMACIÓN
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner">
+        <h1>MovieFlicks
+            <img 
+            src="./assets/img/watching-a-movie_4221419.png" 
+            alt="logo" 
+            class="logo" 
+        />
+        </h1>
+        <p>Descubre nuevas historias: estrenos y clásicos en un solo lugar</p>
+    </div>
+    <section class="section-movies">
+        <h3>Peliculas Recomendadas:</h3>
+        <div class="filter-container">
+            <button class="btn btn--active" data-filter="TRENDING">TENDENCIA</button>
+            <button class="btn" data-filter="TOPRATED">ACLAMADOS</button>
+            <button class="btn" data-filter="UPCOMING">PROXIMOS ESTRENOS</button>
+        </div>
+        <div class="card-container">
+            <!-- <div class="loader">
+                <div data-glitch="Loading..." class="glitch">Loading...</div>
+            </div> -->
+            <!-- <div class="card">
+                <img src="./assets/img/watching-a-movie_4221419.png" alt="img" class="card-img">
+                <div class="card-popularity">75% de popularidad</div>
+                <div class="card-content">
+                    <h4>Nombre de peliculas</h4>
+                    <p>Fecha de estreno: 18/04/2024</p>
+                </div>
+            </div> -->
+        </div>
+        <div class="pagination">
+            <div class="left">
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div class="pages">
+                <button class="page-number active">0</button>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/request.js"></script>
+    <script src="./assets/main.js"></script>
+</body>
+</html>

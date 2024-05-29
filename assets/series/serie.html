@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="icon"
+        type="imagen/png"
+        sizes="16x16"
+        href="../img/watching-a-movie_4221419.png"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../series/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>MovieFlicks</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar_serie">
+            <ul class="navbar_list">
+                <img 
+                    src="../img/watching-a-movie_4221419.png" 
+                    alt="logo" 
+                    class="logo_img" 
+                />
+                <li><a class="series_link" href="../../index.html">
+                    <img 
+                        src="../img/popcorn_659363.png" 
+                        alt="home" 
+                        class="home_serie" 
+                    />
+                    INICIO
+                </a></li>
+                <li><a class="series_link" href="#">
+                    <img 
+                        src="../img/rating_3851524.png" 
+                        alt="Favoritos" 
+                        class="favorito" 
+                    />
+                    FAVORITOS
+                </a></li>
+                <li><a class="series_link" href="#">
+                    <img 
+                        src="../img/movie-night_2729076.png" 
+                        alt="Series" 
+                        class="serie" 
+                    />
+                    SERIES
+                </a></li>
+                <li><a class="series_link" href="#">
+                    <img 
+                        src="../img/employees_251124.png" 
+                        alt="Nosotros" 
+                        class="nos" 
+                    />
+                    NOSOTROS
+                </a></li>
+                <li><a class="series_link" href="#">
+                    <img 
+                        src="../img/file_6996531.png" 
+                        alt="Informacion" 
+                        class="infoseries" 
+                    />
+                    INFORMACIÓN
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="banner-series">
+        <h2>Series
+            <img 
+                src="../img/movie-night_2729076.png" 
+                alt="Series" 
+                class="serie" 
+            />
+        </h2>
+        <p>¡No más búsquedas interminables! Encuentra las mejores series aquí.</p>
+    </div>
+    <section class="section-serie">
+        <h3>SERIES RECOMENDADAS</h3>
+        <div class="filter-serie">
+            <button class="btn btn-active" data-filter="ONAIR">Ultimas Series</button>
+            <button class="btn" data-filter="POPULAR">Popular</button>
+            <button class="btn" data-filter="TOPRATED">Aclamados por la Critica</button>
+        </div>
+        <div class="series-container">
+            <!-- <div class="loader">
+                <div data-glitch="Loading..." class="glitch">Loading...</div>
+            </div> -->
+            <!-- <div class="cards">
+                <img src="../img/watching-a-movie_4221419.png"
+                alt="img" class="img-card">
+                <div class="card-popular">60% de popularidad</div>
+                <div class="cards-content">
+                    <h4>Nombre de la serie</h4>
+                    <p>Fecha de estreno: 18/05/2024</p>
+                </div>
+            </div> -->
+        </div>
+        <div class="pagination-series">
+            <div class="left">
+                <i class="fa-solid fa-backward"></i>
+            </div>
+            <div class="pages">
+                <button class="page-number active">0</button>
+            </div>
+            <div class="right">
+                <i class="fa-solid fa-forward"></i>
+            </div>
+        </div>
+    </section>
+    <script src="../series/request.js"></script>
+    <script src="../series/main.js"></script>
+</body>
+</html>
